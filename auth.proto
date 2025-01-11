@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package proto;
 
+import "role.proto";
+
 option go_package = "/;proto";
 
 service AuthService {
@@ -14,6 +16,7 @@ service AuthService {
 message LoginRequest {
   string userId = 1;
   string userIp = 2;
+  Role role = 3;
 }
 
 message LoginResponse {

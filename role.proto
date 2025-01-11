@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "/;proto";
+
+enum Role{
+  READER = 0;
+  AUTHOR = 1;
+}
