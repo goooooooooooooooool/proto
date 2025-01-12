@@ -34,6 +34,8 @@ message LogoutRequest{
 
 message ValidateTokenRequest {
   string accessToken = 1;
+  int64 userId = 2;
+  Role role = 3;
 }
 
 message ValidateTokenResponse {
