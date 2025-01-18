@@ -15,7 +15,7 @@ service AuthService {
 
 message LoginRequest {
   int64 userId = 1;
-  Role role = 3;
+  Role role = 2;
 }
 
 message LoginResponse {

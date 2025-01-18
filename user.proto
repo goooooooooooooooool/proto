@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package proto;
+
+import "role.proto";
+
+option go_package = "/;proto";
+
+service UserService {
+  rpc Login (UserLoginRequest) returns (UserLoginResponse) {}
+  rpc SignIn (SignInReq) returns (SignInResponse) {}
+}
+
+message UserLoginResponse {
+  int64 userId = 1;
+}
+
+message UserLoginRequest{
+  string password = 1;
+  string email = 2;
+  Role role = 3;
+}
+
+message SignInReq {
+  string password = 1;
+  string email = 2;
+}
+
+message SignInResponse{
+  SignResult result = 1;
+}
+
+enum SignResult{
+  Success = 0;
+  NotRegistered = 1;
+}
