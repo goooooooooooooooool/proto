@@ -27,4 +27,6 @@ message SignInReq {
   Role role = 3;
 }
 
-message SignInResponse{}
+message SignInResponse{
+  int64 userId = 1;
+}
