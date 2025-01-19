@@ -27,11 +27,4 @@ message SignInReq {
   Role role = 3;
 }
 
-message SignInResponse{
-  SignResult result = 1;
-}
-
-enum SignResult{
-  Success = 0;
-  NotRegistered = 1;
-}
+message SignInResponse{}
