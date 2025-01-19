@@ -7,7 +7,7 @@ import "role.proto";
 option go_package = "/;proto";
 
 service UserService {
-  rpc Login (UserLoginRequest) returns (UserLoginResponse, ) {}
+  rpc Login (UserLoginRequest) returns (UserLoginResponse) {}
   rpc SignIn (SignInReq) returns (SignInResponse) {}
 }
 
