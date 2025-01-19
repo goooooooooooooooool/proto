@@ -19,12 +19,12 @@ message UserLoginResponse {
 message UserLoginRequest{
   string password = 1;
   string email = 2;
-  Role role = 3;
 }
 
 message SignInReq {
   string password = 1;
   string email = 2;
+  Role role = 3;
 }
 
 message SignInResponse{
